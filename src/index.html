@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="container-main">
+        <main class="todoapp">
+            <header>
+                <h1>Todos</h1>
+                <button id="btnCreateTask"  class="btnCreateTask">Create Task</button>
+                <!-- <input type="newTodo" placeholder="Task name here" autofocus>  -->
+            </header>
+            
+            <section class="todo-create">
+                <div id="createContainer" class="create-container">
+                    <input type="text" id="input-todo" class="input-todo">
+                    <select class="filter-tag" name="filter-tag" id="filter-tag">
+                        <option value="" disabled selected hidden>Select a tag</option>
+                        <option value="house">House</option>
+                        <option value="personal">Personal</option>
+                        <option value="study">Study</option>
+                        <option value="work">Work</option>
+                        <option value="work">Workout</option>
+                    </select>
+                </div>
+            </section>
+
+            <section class="filterby">
+                <ul class="filters filter-container">
+                    <li>
+                        <a class="selected filter" href="#/">all</a>
+                    </li>
+                    <li>
+                        <a class="filter" href="#/active">active</a>
+                    </li>
+                    <li>
+                        <a class="filter" href="#/completed">completed</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="main">
+
+                <ul class="todo-list">
+                </ul>
+                <ul class="list-done">
+                </ul>
+
+            </section>
+
+        </main>
+
+        <aside>
+            <button class="todo-delete">Delete</button>
+            <label id="todos-done">0 todo's done</label>
+        </aside>
+    </div>
+</body>
+</html>
